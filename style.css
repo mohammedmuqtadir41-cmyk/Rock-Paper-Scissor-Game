@@ -1,0 +1,153 @@
+/* ===== Global Reset ===== */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===== New Warm Gradient Background ===== */
+body {
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    color: #f8fafc;
+    min-height: 100vh;
+}
+
+/* Header */
+h1 {
+    background-color: #2d2a4a;
+    color: #ffdd57;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+
+/* ===== Choice Circles ===== */
+.choice {
+    height: 165px;
+    width: 165px;
+    margin: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.choice:hover {
+    cursor: pointer;
+    background-color: #3b3660;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 221, 87, 0.5);
+}
+
+
+/* Image Styling */
+.choice img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Choices Layout */
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 5rem;
+}
+
+/* ===== Scoreboard ===== */
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    margin-top: 3rem;
+    font-weight: bold;
+}
+
+#user-score, 
+#computer-score {
+    font-size: 3.5rem;
+    color: #38bdf8;
+}
+
+/* ===== Message Box ===== */
+.msg-container {
+    margin-top: 4rem;
+}
+
+#msg {
+    background-color: #1e293b;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    display: inline-block; /* fixed your small typo */
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
+
+
+/* Smooth Fade Animation */
+.fade {
+    animation: fadeEffect 0.4s ease-in-out;
+}
+
+@keyframes fadeEffect {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Reset Button Container */
+.reset-container {
+    margin-top: 3rem;
+}
+
+/* Reset Button Styling */
+#reset-btn {
+    padding: 0.9rem 2.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    
+    background: linear-gradient(135deg, #ff9966, #ff5e62);
+    color: white;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+#reset-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.45);
+}
+
+/* Click Effect */
+#reset-btn:active {
+    transform: scale(0.95);
+}
+
+.msg-container {
+    margin-top: 4rem;
+}
+
+.reset-container {
+    margin-top: 2rem;
+}
+
+#msg {
+    padding: 1.2rem 2.5rem;
+}
+
+
